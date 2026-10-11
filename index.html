@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Het Shah — Portfolio</title>
+  <meta name="description" content="Portfolio of Het Sanjay Shah — full-stack developer, competitive programmer and CS student at Nirma University.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=JetBrains+Mono:wght@400;600&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('mp.theme');if(t)document.documentElement.dataset.theme=t;if(localStorage.getItem('mp.clay')==='1')document.documentElement.dataset.surface='clay'}catch(e){}</script>
+  <script src="js/main.js" defer></script>
+  <script src="js/rally.js" defer></script>
+</head>
+<body data-page="home">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html"><span class="ball-icon" aria-hidden="true"></span>Het<small>.shah</small></a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html" aria-current="page"><span class="num">01</span>Home</a>
+        <a href="about.html"><span class="num">02</span>About</a>
+        <a href="projects.html"><span class="num">03</span>Projects</a>
+        <a href="skills.html"><span class="num">04</span>Skills</a>
+        <a href="contact.html"><span class="num">05</span>Contact</a>
+        <a class="nav-cta" href="Het_Shah_Resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
+      </nav>
+      <div class="header-tools">
+        <button class="scorebug" id="scorebug" aria-label="Open match stats">
+          <span><i class="serve"></i><span class="lbl">PTS</span> <b data-points>LOVE</b></span>
+          <span><span class="lbl">ACES</span> <b data-aces>0/5</b></span>
+        </button>
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle day or night session">
+          <svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="courtlines" aria-hidden="true"></div>
+      <button class="ace" data-ace="home" style="top: 38px; right: 8%;" aria-label="A stray tennis ball"><span class="ball-icon" style="--s:16px"></span></button>
+
+      <div class="wrap hero-grid">
+        <div>
+          <span class="kicker"><span class="dot"></span> Ahmedabad, India · Open to work</span>
+          <h1>Het<span class="line2">Shah</span></h1>
+          <div class="tagline">
+            <span class="chip"><i style="--c: var(--court)"></i>Full-stack developer</span>
+            <span class="chip"><i style="--c: var(--ball)"></i>Competitive programmer</span>
+            <span class="chip"><i style="--c: var(--hot)"></i>Hackathon winner</span>
+          </div>
+          <p class="intro">I'm a CS student at <strong>Nirma University</strong> who builds <strong>real-time, full-stack products</strong>, from 1v1 coding arenas to AI-powered fleet and solar platforms. I also grind algorithms on <strong>LeetCode</strong> and <strong>Codeforces</strong>.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="projects.html">View projects <span class="arrow">→</span></a>
+            <a class="btn" href="about.html">About me</a>
+          </div>
+        </div>
+
+        <div class="rally-card">
+          <div class="rally-top">
+            <span class="kicker">Mini game · tennis rally</span>
+            <span class="rally-score" aria-live="polite">
+              <span>RALLY <b id="rally-count">0</b></span>
+              <span>BEST <b id="rally-best">0</b></span>
+            </span>
+          </div>
+          <canvas id="rally" tabindex="0" aria-label="Mini tennis game. Move with arrow keys or mouse, press Space to serve."></canvas>
+          <p class="rally-help"><span>Move: mouse / touch / <kbd>←</kbd><kbd>→</kbd></span><span>Serve: click / <kbd>Space</kbd></span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span><b>●</b> Open to internships</span><span>Stack: <b>Next.js · React · Node · PostgreSQL</b></span>
+        <span>Experience: <b>Full-stack intern @ Serin AI</b></span><span>Problems solved: <b>850+</b></span>
+        <span>HackDays (IEEE × MLH): <b>Winner 🏆</b></span><span>Hidden tennis balls on every page: <b>5</b></span>
+        <span><b>●</b> Open to internships</span><span>Stack: <b>Next.js · React · Node · PostgreSQL</b></span>
+        <span>Experience: <b>Full-stack intern @ Serin AI</b></span><span>Problems solved: <b>850+</b></span>
+        <span>HackDays (IEEE × MLH): <b>Winner 🏆</b></span><span>Hidden tennis balls on every page: <b>5</b></span>
+      </div>
+    </div>
+
+    <!-- SCOREBOARD -->
+    <section>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>At a Glance</h2>
+          <p>A few numbers from my resume.</p>
+        </div>
+        <div class="board reveal">
+          <div><div class="v">850+</div><div class="k">Problems solved</div><div class="s">across CP platforms</div></div>
+          <div><div class="v">1617</div><div class="k">LeetCode rating</div><div class="s">peak contest rating</div></div>
+          <div><div class="v">9.35</div><div class="k">CGPA</div><div class="s">B.Tech CSE, Nirma University</div></div>
+          <div><div class="v">4</div><div class="k">Hackathons</div><div class="s">1 win · 2 finals · 1 top 10</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORDER OF PLAY -->
+    <section style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Explore</h2>
+          <p>Four more pages to see. Each new page you visit scores a point in the header. Visit all of them to reach <strong>GAME</strong>.</p>
+        </div>
+        <div class="schedule">
+          <a class="match-card reveal" href="about.html" data-court="about" style="--card: var(--court)">
+            <div class="meta"><span>Page 02</span><span class="status">Up next</span></div>
+            <h3>About Me</h3>
+            <p>My background, internship, hackathon wins and education.</p>
+            <span class="go">Open page <span class="arrow">→</span></span>
+          </a>
+          <a class="match-card reveal" href="projects.html" data-court="projects" style="--card: var(--clay)">
+            <div class="meta"><span>Page 03</span><span class="status">Up next</span></div>
+            <h3>Projects</h3>
+            <p>CodeArena, TransitOps, SuryaKiran and more, with live demos and code.</p>
+            <span class="go">Open page <span class="arrow">→</span></span>
+          </a>
+          <a class="match-card reveal" href="skills.html" data-court="skills" style="--card: #2d2a4a">
+            <div class="meta"><span>Page 04</span><span class="status">Up next</span></div>
+            <h3>Skills</h3>
+            <p>Languages, frameworks and tools I use, shown as a music mixing desk.</p>
+            <span class="go">Open page <span class="arrow">→</span></span>
+          </a>
+          <a class="match-card reveal" href="contact.html" data-court="contact" style="--card: var(--grass)">
+            <div class="meta"><span>Page 05</span><span class="status">Up next</span></div>
+            <h3>Contact</h3>
+            <p>Internship, project or hackathon team? Send me a message.</p>
+            <span class="go">Open page <span class="arrow">→</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© 2026 Het Shah · Built with HTML, CSS, JS &amp; plenty of topspin.</span>
+      <span class="hint">psst — tap the score bug ↗ for your match stats</span>
+    </div>
+  </footer>
+</body>
+</html>

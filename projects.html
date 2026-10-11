@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Het Shah</title>
+  <meta name="description" content="Projects by Het Shah: CodeArena, TransitOps, SuryaKiran, QueryWise, Prithvix and TrackYourLife.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=JetBrains+Mono:wght@400;600&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('mp.theme');if(t)document.documentElement.dataset.theme=t;if(localStorage.getItem('mp.clay')==='1')document.documentElement.dataset.surface='clay'}catch(e){}</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="projects">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html"><span class="ball-icon" aria-hidden="true"></span>Het<small>.shah</small></a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html"><span class="num">01</span>Home</a>
+        <a href="about.html"><span class="num">02</span>About</a>
+        <a href="projects.html" aria-current="page"><span class="num">03</span>Projects</a>
+        <a href="skills.html"><span class="num">04</span>Skills</a>
+        <a href="contact.html"><span class="num">05</span>Contact</a>
+        <a class="nav-cta" href="Het_Shah_Resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
+      </nav>
+      <div class="header-tools">
+        <button class="scorebug" id="scorebug" aria-label="Open match stats">
+          <span><i class="serve"></i><span class="lbl">PTS</span> <b data-points>LOVE</b></span>
+          <span><span class="lbl">ACES</span> <b data-aces>0/5</b></span>
+        </button>
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle day or night session">
+          <svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="courtlines" aria-hidden="true"></div>
+      <button class="ace" data-ace="projects" style="top: 46%; right: 14%;" aria-label="A stray tennis ball"><span class="ball-icon" style="--s:16px"></span></button>
+      <div class="wrap">
+        <span class="kicker"><span class="dot"></span> 03 · Projects</span>
+        <h1>My <span class="hl">Projects</span></h1>
+        <p class="lead">Things I've built: full-stack web apps, AI tools and personal projects. Use the filters to narrow by category.</p>
+        <div class="record">
+          <span class="chip"><i style="--c: var(--grass)"></i>7 featured projects</span>
+          <span class="chip"><i style="--c: var(--court)"></i>30+ repos on GitHub</span>
+          <span class="chip"><i style="--c: var(--hot)"></i>🏆 HackDays winner</span>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:0">
+      <div class="wrap">
+        <div class="filters" role="group" aria-label="Filter by category">
+          <button class="filter" data-filter="all" aria-pressed="true"><i style="--c: var(--ink)"></i>All projects</button>
+          <button class="filter" data-filter="hard" aria-pressed="false"><i style="--c: #2a64ad"></i>Full-stack</button>
+          <button class="filter" data-filter="clay" aria-pressed="false"><i style="--c: #c4612f"></i>AI &amp; data</button>
+          <button class="filter" data-filter="grass" aria-pressed="false"><i style="--c: #4f8a3c"></i>Personal</button>
+        </div>
+
+        <div class="projects">
+          <!-- data-surface = hard | clay | grass -->
+          <article class="project reveal" data-surface="clay" style="--c: #c4612f">
+            <div class="strip"><span class="ball-icon" aria-hidden="true" style="--bx:58%"></span><span class="surface">AI &amp; data</span><span class="score">🏆 Winner</span></div>
+            <div class="body">
+              <span class="vs">Problem: blind spots in web traffic</span>
+              <h3>NetScope</h3>
+              <p>Won HackDays (IEEE × MLH). A web traffic intelligence platform that enriches traffic data with Snowflake and IPinfo Lite for geographic and ASN-based analysis. It uses Snowflake Cortex and RAG for AI-powered anomaly investigation.</p>
+              <div class="tags"><span>Next.js</span><span>Snowflake</span><span>Snowflake Cortex</span><span>RAG</span><span>IPinfo</span></div>
+              <div class="links"><a href="about.html#hackathons">Hackathon details →</a></div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-surface="hard" style="--c: #2a64ad">
+            <div class="strip"><span class="ball-icon" aria-hidden="true" style="--bx:70%"></span><span class="surface">Full-stack</span><span class="score">Real-time</span></div>
+            <div class="body">
+              <span class="vs">Problem: lonely solo practice</span>
+              <h3>CodeArena</h3>
+              <p>A 1v1 competitive coding platform. Real-time matchmaking and synchronized battle rooms over Socket.IO, JWT auth with role-based access, and a 15+ endpoint REST API powering leaderboards and submission tracking under concurrent play.</p>
+              <div class="tags"><span>React</span><span>Node.js</span><span>Express</span><span>Socket.IO</span><span>PostgreSQL</span><span>Prisma</span></div>
+              <div class="links"><a href="https://github.com/Het6518/codeArena-" target="_blank" rel="noopener">Source code ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-surface="hard" style="--c: #2a64ad">
+            <div class="strip"><span class="ball-icon" aria-hidden="true" style="--bx:40%"></span><span class="surface">Full-stack</span><span class="score">10+ APIs</span></div>
+            <div class="body">
+              <span class="vs">Problem: spreadsheet-run logistics</span>
+              <h3>TransitOps</h3>
+              <p>A fleet management and dispatch platform for managers, dispatchers, safety officers, analysts and drivers. It has 6 modular backend services, 10+ REST APIs, Prisma transactions for atomic trip workflows, interactive route maps and analytics dashboards.</p>
+              <div class="tags"><span>React</span><span>Vite</span><span>Zustand</span><span>Node.js</span><span>Prisma</span><span>PostgreSQL</span><span>Leaflet</span></div>
+              <div class="links"><a href="https://transitops-psi.vercel.app/" target="_blank" rel="noopener">Live demo ↗</a><a href="https://github.com/Het6518/Transitops" target="_blank" rel="noopener">Source code ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-surface="clay" style="--c: #c4612f">
+            <div class="strip"><span class="ball-icon" aria-hidden="true" style="--bx:55%"></span><span class="surface">AI &amp; data</span><span class="score">87% ACC</span></div>
+            <div class="body">
+              <span class="vs">Problem: surprise solar inverter failures</span>
+              <h3>SuryaKiran</h3>
+              <p>An AI predictive-maintenance platform for solar inverter fleets. An ML ensemble (Random Forest, XGBoost, LightGBM, CatBoost) reaches 87% fault-prediction accuracy, with anomaly detection, root-cause analysis, an LLM maintenance assistant and an 8-language dashboard. Built as backend engineer on a 5-person team.</p>
+              <div class="tags"><span>Python</span><span>XGBoost</span><span>LightGBM</span><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+              <div class="links"><a href="https://github.com/Het6518/SuryaKiran" target="_blank" rel="noopener">Source code ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-surface="clay" style="--c: #c4612f">
+            <div class="strip"><span class="ball-icon" aria-hidden="true" style="--bx:30%"></span><span class="surface">AI &amp; data</span><span class="score">NL → SQL</span></div>
+            <div class="body">
+              <span class="vs">Problem: the 2 AM slow query</span>
+              <h3>QueryWise</h3>
+              <p>An AI-powered SQL optimizer. You describe what you need in plain English and get schema-aware SQL. It also catches syntax errors before they reach your database, flags bottlenecks with optimization tips, and has a chat assistant.</p>
+              <div class="tags"><span>React</span><span>Vite</span><span>Tailwind</span><span>Node.js</span><span>Express</span><span>Gemini API</span></div>
+              <div class="links"><a href="https://querywise-nine.vercel.app/" target="_blank" rel="noopener">Live demo ↗</a><a href="https://github.com/Het6518/querywise" target="_blank" rel="noopener">Source code ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-surface="hard" style="--c: #2a64ad">
+            <div class="strip"><span class="ball-icon" aria-hidden="true" style="--bx:62%"></span><span class="surface">Full-stack</span><span class="score">SaaS</span></div>
+            <div class="body">
+              <span class="vs">Problem: paper ledgers at agri dealers</span>
+              <h3>Prithvix</h3>
+              <p>An AgriTech SaaS for India's agricultural input dealers. It covers farmer profiles, inventory with low-stock alerts and a digital udhaar/khata credit ledger. It also has a Gemini-powered agronomist chatbot, a farmer distribution map and multilingual support.</p>
+              <div class="tags"><span>Next.js 15</span><span>TypeScript</span><span>Prisma</span><span>Supabase</span><span>Leaflet</span><span>Gemini API</span></div>
+              <div class="links"><a href="https://prithvi-x.vercel.app/" target="_blank" rel="noopener">Live demo ↗</a><a href="https://github.com/Het6518/Prithvi-x" target="_blank" rel="noopener">Source code ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-surface="grass" style="--c: #4f8a3c">
+            <div class="strip"><span class="ball-icon" aria-hidden="true" style="--bx:48%"></span><span class="surface">Personal</span><span class="score">365 days</span></div>
+            <div class="body">
+              <span class="vs">Problem: forgetting how the year went</span>
+              <h3>TrackYourLife</h3>
+              <p>A personal day-journal. Log a daily mood score and note, then see the year as a heatmap with streaks and trends. Share chosen days with friends, pin goals to a vision board, play your own music library, and theme the whole UI.</p>
+              <div class="tags"><span>Django 5</span><span>DRF</span><span>React 19</span><span>Vite</span></div>
+              <div class="links"><a href="https://track-your-life-dusky.vercel.app" target="_blank" rel="noopener">Live demo ↗</a><a href="https://github.com/Het6518/TrackYourLife" target="_blank" rel="noopener">Source code ↗</a></div>
+            </div>
+          </article>
+        </div>
+
+        <p class="reveal" style="margin-top:28px;color:var(--ink-2)">More projects on GitHub → <a href="https://github.com/Het6518" target="_blank" rel="noopener">github.com/Het6518</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© 2026 Het Shah · Built with HTML, CSS, JS &amp; plenty of topspin.</span>
+      <span class="hint">psst — tap the score bug ↗ for your match stats</span>
+    </div>
+  </footer>
+</body>
+</html>
