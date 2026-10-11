@@ -376,6 +376,18 @@ section { padding-block: clamp(48px, 8vw, 96px); }
 .pc-avatar::before, .pc-avatar::after { content: ""; position: absolute; width: 100%; height: 100%; border-radius: 50%; border: 5px solid rgba(255,255,255,.75); }
 .pc-avatar::before { left: -70%; } .pc-avatar::after { right: -70%; }
 .pc-avatar span { position: relative; z-index: 1; }
+/* Profile photo with ball-yellow ring + tennis ball badge */
+.photo-ring { --ps: 46%; position: relative; display: block; width: var(--ps); aspect-ratio: 1; flex: none; }
+.photo-ring img {
+  width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; border-radius: 50%; display: block;
+  box-shadow: 0 0 0 4px var(--ball), 0 18px 30px -12px rgba(0,0,0,.6);
+}
+.photo-ring .ball-icon { --s: 30px; position: absolute; right: -2%; bottom: 2%; box-shadow: 0 4px 10px rgba(0,0,0,.35); }
+.pc-photo { margin: 8px auto 16px; }
+.pc-photo .ball-icon { --s: 44px; }
+.pc-photo img { box-shadow: 0 0 0 5px var(--ball), 0 18px 30px -12px rgba(0,0,0,.6); }
+.hero-me { display: flex; align-items: center; gap: 18px; }
+.hero-me .photo-ring .ball-icon { --s: 26px; }
 .pc-name { text-align: center; font-family: var(--font-display); font-weight: 900; font-size: 34px; text-transform: uppercase; line-height: 1; }
 .pc-role { text-align: center; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: .14em; opacity: .75; margin: 6px 0 14px; }
 .pc-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 18px; font-family: var(--font-mono); font-size: 13px; margin-top: auto; border-top: 1px solid rgba(255,255,255,.18); padding-top: 12px; }
